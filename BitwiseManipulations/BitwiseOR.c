@@ -15,12 +15,14 @@ int main()
 	int t1=x;
 	int t2=y;
 	int n1,n2=0;
-	while(x!=0){
-      n1++;
-      x>>=1;}
+	while(x!=0){	//no of bits in the number
+      	     n1++;
+      	     x>>=1;
+	}
 	while(y!=0){
-      n2++;
-      y>>=1;}
+      	     n2++;
+      	     y>>=1;
+	}
 
 	int l=(n1>=n2) ? pow(2,n1):pow(2,n2);
 
