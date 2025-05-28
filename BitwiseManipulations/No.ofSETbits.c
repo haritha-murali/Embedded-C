@@ -26,6 +26,17 @@ void noSETbitsNumber(){            //no. of set bits in a number
       x>>=1;
       }  
   printf("set bits in %d is %d\n",t,c);
+
+  /*another approach
+	int x=15;
+	int c=0;
+	while(x!=0){
+	    x=x&(x-1);
+      c++;
+	}
+	printf("%d",c);
+  */
+
 }
 
 int main()
