@@ -44,18 +44,19 @@ int main()
 	        freq[v[i]]++;
 	    }
 	
-        for(int i=0;i<100;i++) {
-            if (freq[i]>1) {
-                c=freq[i];
-                found = 2;
+            for(int i=0;i<100;i++) {
+                if (freq[i]>1) {
+                    c=freq[i];
+                    found = 2;
+                }
             }
         }
-    }
 
-    if (found!=1 && found!=2){
-        c=-1;
-    }
-    printf("c= %d\n",c);
+    	if (found!=1 && found!=2){
+        	c=-1;
+    	}
+	
+    	printf("c= %d\n",c);
 
 	return 0;
 }
